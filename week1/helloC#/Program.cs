@@ -1,6 +1,4 @@
-﻿using System;
-using System.Security.Cryptography.X509Certificates; // using is like import. We import our namespaces/libraries with USING statements
-
+﻿using System;  // using is like import. We import our namespaces/libraries with USING statements
 
 namespace helloC_; // File cabinet, we store our stuff in it (our code)
 
@@ -11,7 +9,6 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-
 
         //Built-in data types in C#
 
@@ -26,7 +23,7 @@ class Program
         float anotherFloating = 50.50f; // less precision, less memory usage
 
         //characters and booleans
-        char myChar = 'P'; 
+        char myChar = 'P';
         bool isTrue = true;
 
 
@@ -43,8 +40,7 @@ class Program
         int d = 10 / 5;
         int e = 10 % 5;
 
-        // Logical operators
-        //a != b //NOT operator
+        //Comparison operators
         //a == b //EQUALS operator
         //a != b //NOT EQUALS operator
         //a > b //GREATER THAN operator
@@ -52,7 +48,7 @@ class Program
         //a >= b //GREATER THAN OR EQUAL TO operator
         //a <= b //LESS THAN OR EQUAL TO operator
 
-        //Comparison operators
+        //Logical operators
         //a < b || a == b //OR operator
         //a > b && a == b //AND operator
         //a < b ^ b == a //XOR operator
@@ -67,21 +63,24 @@ class Program
         Console.WriteLine("Enter your name: \n");
         string user = Console.ReadLine(); //Read user input
         Console.WriteLine("You entered: " + user);
-        
+
 
         //Conditional Statements
         bool isPassword = true;
-        if(isPassword) {
+        if (isPassword)
+        {
             Console.WriteLine("Password is correct");
         }
-        else {
+        else
+        {
             Console.WriteLine("Password is incorrect");
         }
 
 
         //Switch statements
         int day = 5;
-        switch(day) {
+        switch (day)
+        {
             case 1:
                 Console.WriteLine("Monday");
                 break;
@@ -109,25 +108,28 @@ class Program
         }
 
         //Loops
-        
+
         //for loop
-        for(int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++)
+        {
             Console.WriteLine(i);
         }
 
         //while loop
         int j = 0;
-        while(j < 10) {
+        while (j < 10)
+        {
             Console.WriteLine(j);
             j++;
         }
 
         //do while loop
         int k = 0;
-        do {
+        do
+        {
             Console.WriteLine(k);
             k++;
-        }while(k < 10);
+        } while (k < 10);
 
         //Type Conversion
 
@@ -135,10 +137,10 @@ class Program
         int myInt = 10;
         double myDouble = myInt;
         Console.WriteLine(myDouble); // was converted to double, no data loss
-        
+
         //Explicit conversion
         double doubleVal = 10.5;
-        int intVal = (int)doubleVal;
+        int intVal = (int)doubleVal; //was converted to int data loss may occur
         Console.WriteLine(intVal);
 
 

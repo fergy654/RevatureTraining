@@ -1,5 +1,5 @@
 ﻿namespace Magic_Ball;
-//test
+
 //Magic Ball
 class Program
 {
@@ -10,20 +10,21 @@ class Program
 
         string? userInput = Console.ReadLine(); //? means it can be null
 
-        if(!string.IsNullOrEmpty(userInput)) {
+        if (!string.IsNullOrEmpty(userInput))
+        {
             Console.WriteLine("\nThe magic ball says:");
             string prediction = GetPrediction();
             Console.WriteLine(prediction);
         }
-        else {
+        else
+        {
             Console.WriteLine("Type something!\n");
             Main(args);
         }
     }
 
-
-
-    public static string GetPrediction() {
+    public static string GetPrediction()
+    {
         //This is how we mark our variable of a stirng array data type
         string[] predicitons = {
             "It is certain",
