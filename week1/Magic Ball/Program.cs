@@ -1,5 +1,5 @@
 ﻿namespace Magic_Ball;
-
+//test
 //Magic Ball
 class Program
 {
