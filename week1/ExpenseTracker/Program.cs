@@ -10,16 +10,17 @@ class Program
 
 
         //Exectue methods according to user's selection
-        switch(selectUserOption) {
+        switch (selectUserOption)
+        {
             case 1:
                 Console.WriteLine("User slected to add an expense.");
                 break;
             case 2:
-                 Console.WriteLine("User slected to view all expenses.");
-                 break;
+                Console.WriteLine("User slected to view all expenses.");
+                break;
             case 3:
                 Console.WriteLine("User slected to edit an expense.");
-                break; 
+                break;
             case 4:
                 Console.WriteLine("User slected to delete an expense.");
                 break;
@@ -30,13 +31,13 @@ class Program
                 Console.WriteLine("User slected to exit.");
                 break;
             default:
-                Console.WriteLine("Invalid selection.");
+                Console.WriteLine("Invalid selection. Please try again.");
                 break;
-
         }
     }
 
-    public static void Greeting(){
+    public static void Greeting()
+    {
         Console.WriteLine("Welcome to the Expense Tracker!");
         Thread.Sleep(1500);
         Console.WriteLine("Select one of the following options: \n");
@@ -44,7 +45,8 @@ class Program
 
     }
 
-    public static void DisplayOptions(){
+    public static void DisplayOptions()
+    {
         Console.WriteLine("1. Add an expense");
         Console.WriteLine("2. View expenses");
         Console.WriteLine("3. Edit Expense");
@@ -54,15 +56,18 @@ class Program
 
     }
 
-    public static int getUserOption(){
+    public static int getUserOption()
+    {
         Console.WriteLine("Select the option: \n");
-        string? userInput = Console.ReadLine();
+        string? userInput = Console.ReadLine(); // ? marks that our userInput might be null
 
-        try{
+        try
+        {
             return Int32.Parse(userInput);
-            
+
         }
-        catch(Exception e) {
+        catch (Exception e)
+        {
             Console.WriteLine("Invalid input! Make sure you typed a number");
             return getUserOption();
         }
