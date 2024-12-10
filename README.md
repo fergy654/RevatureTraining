@@ -1,1 +1,1 @@
-Welccome to Revature!
+Welcome to Revature!
